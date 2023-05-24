@@ -10,6 +10,7 @@
                 @forelse ($movies as $movie)
                 <div class="col">
                     <div class="card">
+                        <img src="{{$movie->img}}" alt="{{$movie->title}}" class="card-img-top">
                         <div class="card-body">
                             <h3 class="card-title">{{$movie->title}}</h3>
                             <p>{{$movie->date}}</p>
